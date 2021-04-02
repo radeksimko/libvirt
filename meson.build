@@ -1653,7 +1653,7 @@ endif
 
 # there's no use compiling the network driver without the libvirt
 # daemon, nor compiling it for macOS, where it breaks the compile
-if not get_option('driver_network').disabled() and conf.has('WITH_LIBVIRTD') and host_machine.system() != 'darwin'
+if not get_option('driver_network').disabled() and conf.has('WITH_LIBVIRTD')
   conf.set('WITH_NETWORK', 1)
 endif
 
