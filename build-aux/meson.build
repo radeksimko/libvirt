@@ -12,7 +12,7 @@ syntax_check_conf.set('PYTHON3', python3_prog.path())
 
 if host_machine.system() == 'freebsd' or host_machine.system() == 'darwin'
   make_prog = find_program('gmake')
-  sed_prog = find_program('gsed')
+  sed_prog = find_program('sed')
 else
   make_prog = find_program('make')
   sed_prog = find_program('sed')
