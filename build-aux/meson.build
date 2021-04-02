@@ -28,7 +28,7 @@ if host_machine.system() == 'freebsd'
     endif
   endif
 elif host_machine.system() == 'darwin'
-  grep_prog = find_program('ggrep')
+  grep_prog = find_program('grep')
 else
   grep_prog = find_program('grep')
 endif
